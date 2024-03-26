@@ -16,3 +16,8 @@ SELECT exam_id AS appello, AVG(vote) AS vote
 FROM exam_student
 GROUP BY exam_id
 
+4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+
+SELECT department_id AS departimento, COUNT(id) AS corso_di_laurea
+FROM degrees
+GROUP BY department_id
